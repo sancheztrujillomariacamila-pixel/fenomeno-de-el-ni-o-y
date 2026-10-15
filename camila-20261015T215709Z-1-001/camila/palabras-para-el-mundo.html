@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Voz: Contar para Cuidar</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', 'Comic Sans MS', cursive, sans-serif; }
+        :root {
+            --azul-profundo: #1565c0;
+            --naranja-fuego: #e65100;
+            --verde-bosque: #2f6a31;
+            --morado-calma: #7b1fa2;
+            --arena-suave: #fff8e1;
+            --texto-base: #263238;
+        }
+        body {
+            background: linear-gradient(180deg, #fafafa 0%, #e3f2fd 50%, #fce4ec 100%);
+            background-size: 200% 200%;
+            animation: palabras-vuelan 16s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-base);
+        }
+        @keyframes palabras-vuelan {
+            0% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 0 0; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--morado-calma), var(--azul-profundo), var(--verde-bosque));
+            padding: 1.2rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1.1rem;
+            border-radius: 25px;
+            transition: all 0.35s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.08);
+        }
+        main {
+            padding: 2.8rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--morado-calma);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--azul-profundo);
+            margin-bottom: 2.5rem;
+        }
+        .imagen-portada {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 25px rgba(123,31,162,0.18);
+        }
+        .seccion {
+            background: rgba(255,255,255,0.93);
+            padding: 2.3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 6px solid var(--morado-calma);
+        }
+        .seccion h2 {
+            color: var(--naranja-fuego);
+            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
+            border-bottom: 2px dotted #ffcc80;
+            padding-bottom: 0.5rem;
+        }
+        .seccion p {
+            line-height: 1.95;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        .seccion ul {
+            margin: 1rem 0 1rem 2rem;
+            line-height: 1.95;
+        }
+        .seccion li {
+            margin-bottom: 0.7rem;
+        }
+        .destacado {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-right: 5px solid var(--verde-bosque);
+        }
+        .cierre {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-left: 5px solid var(--morado-calma);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--morado-calma), var(--azul-profundo));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.7rem; }
+            .imagen-portada { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="tierra-viva-inicio.html">🌍 Inicio</a></li>
+        <li><a href="fenomeno-el-nino.html">🌊 El Niño</a></li>
+        <li><a href="fuerza-super-nino.html">⚡ Super Niño</a></li>
+        <li><a href="colombia-pais-biodiverso.html">🇨🇴 Colombia</a></li>
+        <li><a href="cuidado-y-ambiente.html">🌿 Cuidado Ambiental</a></li>
+        <li><a href="palabras-para-el-mundo.html" class="activa">📝 Nuestra Voz</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>📝 Nuestra Voz: Contar para Cuidar</h1>
+    <p class="subtitulo">El lenguaje como herramienta de cambio</p>
+
+    <img src="palabras-que-cuidan.jpg" alt="Escribir, compartir y cuidar juntos" class="imagen-portada">
+
+    <div class="seccion">
+        <h2>🗣️ Por qué sirven las palabras</h2>
+        <p>Cuando entendemos algo y lo explicamos, lo hacemos nuestro. Y cuando lo compartimos, se vuelve de todos. El lenguaje no es solo para comunicarnos: es para transformar lo que sabemos en acción. Por eso investigar, leer y escribir sobre el clima es también una forma de cuidar.</p>
+        <p>Hemos aprendido qué es El Niño, por qué existe el Super Niño y cómo afecta a Colombia. Ahora no podemos quedarnos callados: tenemos que contarlo. Cada persona que entiende, puede cuidar. Y cada persona que cuida, ayuda.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>✍️ Formas de compartir lo que sabemos</h2>
+        <p>No necesitas ser escritor para contar lo que aprendiste. Hay muchas formas de hacerlo:</p>
+        <ul>
+            <li><strong>Contar en familia:</strong> Explica con tus propias palabras por qué hay que cuidar el agua. No uses frases difíciles: lo que se entiende fácil, llega más lejos.</li>
+            <li><strong>Escribir mensajes cortos:</strong> Pega avisos en el colegio o en casa recordando cerrar la llave, apagar las luces o no tirar basura. Mensajes sencillos se quedan en la mente.</li>
+            <li><strong>Cartas a quienes deciden:</strong> Escribe a personas que pueden ayudar: profesores, alcaldes, familiares. Diles qué notas que falta y qué propones tú.</li>
+            <li><strong>Relatar lo que ves:</strong> Pregunta a alguien mayor cómo era el clima antes. Anota lo que te cuente. Esas memorias ayudan a entender el cambio.</li>
+            <li><strong>Dibujar y explicar:</strong> Una imagen con su mensaje llega rápido a los ojos y al corazón. Combina lo que ves con lo que sientes.</li>
+        </ul>
+    </div>
+
+    <div class="destacado">
+        <h2>💬 Lo que podemos decir</h2>
+        <p>No necesitamos palabras grandes ni complicadas. Esto es lo importante:</p>
+        <p>"El clima cambia y nosotros lo notamos. Cuidar el agua, los árboles y el aire no es tarea de otros: es nuestra. Empezamos hoy, con lo que está a nuestro alcance. El cambio se hace de a poquito, pero se hace."</p>
+    </div>
+
+    <div class="seccion">
+        <h2>📖 Lo que aprendimos</h2>
+        <p>Este proyecto nos enseñó que todo está conectado: lo que pasa en el mar llega a nuestra tierra. Lo que hace cada persona suma. El agua, el aire, los bosques y nosotros formamos parte de un mismo sistema.</p>
+        <p>También aprendimos que no estamos solos en esto. Millones de personas en el mundo están cuidando, aprendiendo y actuando. Nuestra voz se une a las suyas. Juntos somos más fuertes.</p>
+    </div>
+
+    <div class="cierre">
+        <h2>✨ Para terminar</h2>
+        <p>El futuro no lo escriben solo los científicos ni los gobernantes. Lo escribimos todos, con lo que hacemos cada día. Tú tienes voz, tienes ideas y tienes la fuerza para cambiar las cosas desde tu lugar.</p>
+        <p>No esperes a que otros lo hagan primero. Empieza tú. Cuida, comparte, explica. Cada palabra que dices y cada gesto que haces es una semilla para el mundo que queremos.</p>
+        <p style="text-align: center; font-weight: bold; color: var(--morado-calma); margin-top: 1rem;">"Las palabras mueven, los ejemplos transforman. Haz las dos cosas."</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Tierra Viva · 📝 Nuestra Voz · Escribir, Contar, Cuidar · 2026</p>
+</footer>
+
+</body>
+</html>

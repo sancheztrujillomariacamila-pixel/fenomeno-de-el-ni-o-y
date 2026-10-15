@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierra Viva: Inicio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', 'Comic Sans MS', cursive, sans-serif; }
+        :root {
+            --azul-profundo: #1565c0;
+            --naranja-fuego: #e65100;
+            --verde-bosque: #2f6a31;
+            --morado-calma: #7b1fa2;
+            --arena-suave: #fff8e1;
+            --texto-base: #263238;
+        }
+        body {
+            background: linear-gradient(180deg, #e3f2fd 0%, #fbe9e7 50%, #e8f5e9 100%);
+            background-size: 200% 200%;
+            animation: respira-naturaleza 16s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-base);
+        }
+        @keyframes respira-naturaleza {
+            0% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 0 0; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--azul-profundo), var(--verde-bosque), var(--naranja-fuego));
+            padding: 1.2rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1.1rem;
+            border-radius: 25px;
+            transition: all 0.35s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.08);
+        }
+        main {
+            padding: 2.8rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.6rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--azul-profundo);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.3rem;
+            color: var(--naranja-fuego);
+            margin-bottom: 2.5rem;
+        }
+        .imagen-portada {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 12px 30px rgba(21,101,192,0.2);
+        }
+        .bienvenida {
+            background: rgba(255,255,255,0.92);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 6px solid var(--verde-bosque);
+            text-align: center;
+        }
+        .bienvenida p {
+            font-size: 1.1rem;
+            line-height: 2;
+            margin-bottom: 1rem;
+        }
+        .temas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        .tema {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 16px;
+            border-top: 4px solid var(--naranja-fuego);
+            transition: transform 0.3s ease;
+        }
+        .tema:hover {
+            transform: translateY(-8px);
+        }
+        .tema h3 {
+            color: var(--azul-profundo);
+            margin-bottom: 0.8rem;
+        }
+        .cierre {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-top: 2rem;
+            border-right: 5px solid var(--verde-bosque);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--azul-profundo), var(--verde-bosque));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .imagen-portada { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="tierra-viva-inicio.html" class="activa">🌍 Inicio</a></li>
+        <li><a href="fenomeno-el-nino.html">🌊 El Niño</a></li>
+        <li><a href="fuerza-super-nino.html">⚡ Super Niño</a></li>
+        <li><a href="colombia-pais-biodiverso.html">🇨🇴 Colombia</a></li>
+        <li><a href="cuidado-y-ambiente.html">🌿 Cuidado Ambiental</a></li>
+        <li><a href="palabras-para-el-mundo.html">📝 Nuestra Voz</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>🌍 Tierra Viva: El Clima que Nos Conecta</h1>
+    <p class="subtitulo">Conocer para entender, entender para cuidar</p>
+
+    <img src="planeta-agua-vida.jpg" alt="Nuestro planeta: agua, tierra y vida conectados" class="imagen-portada">
+
+    <div class="bienvenida">
+        <h2>✨ Bienvenidos</h2>
+        <p>Este proyecto te invita a conocer uno de los fenómenos más importantes de nuestro planeta: El Niño y su versión más fuerte, el Super Niño. No es solo información: es lo que necesitamos saber para proteger nuestra tierra, nuestro agua y nuestro futuro.</p>
+        <p>Todo lo que pasa en el océano se siente en nuestras montañas, en nuestros ríos y en los campos donde crecen los alimentos. Estamos conectados con el mundo entero, aunque no siempre lo veamos. Aquí descubrirás cómo.</p>
+    </div>
+
+    <div class="temas">
+        <div class="tema">
+            <h3>🌊 ¿Qué es El Niño?</h3>
+            <p>Descubre cómo cambia el agua del mar y por eso cambia el clima en todo el planeta.</p>
+        </div>
+        <div class="tema">
+            <h3>⚡ El Super Niño</h3>
+            <p>Conoce cuándo el fenómeno se vuelve más intenso y qué significa para todos.</p>
+        </div>
+        <div class="tema">
+            <h3>🇨🇴 Colombia</h3>
+            <p>Mira cómo afecta todo esto a nuestro país y por qué aquí lo sentimos con fuerza.</p>
+        </div>
+        <div class="tema">
+            <h3>🌿 Cuidado Ambiental</h3>
+            <p>Acciones reales que tú puedes hacer desde hoy para ayudar a cuidar el entorno.</p>
+        </div>
+        <div class="tema">
+            <h3>📝 Nuestra Voz</h3>
+            <p>Por qué escribir, contar y compartir lo que aprendemos también es cuidar.</p>
+        </div>
+    </div>
+
+    <div class="cierre">
+        <h2>💚 Un mensaje para ti</h2>
+        <p>No necesitas ser científico para entender lo que pasa. Solo necesitas prestar atención, preguntar y actuar. El cambio no empieza en otro lado: empieza aquí, en lo que tú decides hacer hoy.</p>
+        <p style="text-align: center; font-weight: bold; color: var(--azul-profundo); margin-top: 1rem;">"Cada uno de nosotros es una pieza importante en el cuidado del mundo."</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Tierra Viva · 🌍 Conocer, Cuidar, Compartir · 2026</p>
+</footer>
+
+</body>
+</html>

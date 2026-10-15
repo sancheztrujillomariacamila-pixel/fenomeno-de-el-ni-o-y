@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia: País Biodiverso</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', 'Comic Sans MS', cursive, sans-serif; }
+        :root {
+            --azul-profundo: #1565c0;
+            --naranja-fuego: #e65100;
+            --verde-bosque: #2f6a31;
+            --amarillo-tierra: #fbc02d;
+            --rojo-valor: #c62828;
+            --texto-base: #263238;
+        }
+        body {
+            background: linear-gradient(180deg, #fffde7 0%, #e8f5e9 50%, #e3f2fd 100%);
+            background-size: 200% 200%;
+            animation: brisa-tropical 16s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-base);
+        }
+        @keyframes brisa-tropical {
+            0% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 0 0; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--amarillo-tierra), var(--verde-bosque), var(--azul-profundo));
+            padding: 1.2rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1.1rem;
+            border-radius: 25px;
+            transition: all 0.35s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.08);
+        }
+        main {
+            padding: 2.8rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--verde-bosque);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--azul-profundo);
+            margin-bottom: 2.5rem;
+        }
+        .imagen-portada {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 25px rgba(47,106,49,0.2);
+        }
+        .seccion {
+            background: rgba(255,255,255,0.93);
+            padding: 2.3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 6px solid var(--amarillo-tierra);
+        }
+        .seccion h2 {
+            color: var(--azul-profundo);
+            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
+            border-bottom: 2px dotted #90caf9;
+            padding-bottom: 0.5rem;
+        }
+        .seccion p {
+            line-height: 1.95;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        .seccion ul {
+            margin: 1rem 0 1rem 2rem;
+            line-height: 1.95;
+        }
+        .destacado {
+            background: linear-gradient(135deg, #fff8e1, #ffecb3);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-right: 5px solid var(--amarillo-tierra);
+        }
+        .cierre {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-left: 5px solid var(--verde-bosque);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--amarillo-tierra), var(--verde-bosque));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.7rem; }
+            .imagen-portada { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="tierra-viva-inicio.html">🌍 Inicio</a></li>
+        <li><a href="fenomeno-el-nino.html">🌊 El Niño</a></li>
+        <li><a href="fuerza-super-nino.html">⚡ Super Niño</a></li>
+        <li><a href="colombia-pais-biodiverso.html" class="activa">🇨🇴 Colombia</a></li>
+        <li><a href="cuidado-y-ambiente.html">🌿 Cuidado Ambiental</a></li>
+        <li><a href="palabras-para-el-mundo.html">📝 Nuestra Voz</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>🇨🇴 Colombia: Un País de Muchos Climas</h1>
+    <p class="subtitulo">Nuestra riqueza nos hace especiales, pero también vulnerables</p>
+
+    <img src="colombia-pajaros-rios-montanas.jpg" alt="Colombia: montañas, ríos y diversidad natural" class="imagen-portada">
+
+    <div class="seccion">
+        <h2>🌎 ¿Por qué nos afecta tanto?</h2>
+        <p>Colombia está justo en la zona donde el sol da con más fuerza y donde se encuentran grandes masas de aire y corrientes marinas. Por eso, cuando El Niño o el Super Niño cambian el clima del mundo, aquí lo sentimos de forma directa.</p>
+        <p>Tenemos costas en dos océanos, montañas altas, selvas, llanuras y desiertos. Esa variedad nos hace uno de los países con mayor riqueza natural del planeta, pero también significa que cuando cambia el clima, casi ninguna zona queda sin notarlo.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>☀️ ¿Qué pasa cuando llega El Niño?</h2>
+        <p>En la mayor parte del país, especialmente en la zona Andina, la costa Caribe y los Llanos, disminuyen las lluvias. Esto trae consecuencias que podemos ver y sentir:</p>
+        <ul>
+            <li>Los ríos bajan de nivel y los embalses tienen menos agua para las ciudades y los campos</li>
+            <li>La vegetación se seca y aumenta el riesgo de incendios en bosques y páramos</li>
+            <li>Los cultivos sufren por falta de agua y los alimentos pueden escasear o subir de precio</li>
+            <li>En las costas, el mar se calienta y afecta a los peces y a las familias que viven de la pesca</li>
+            <li>Los páramos, que son nuestras fábricas de agua, se vuelven más frágiles</li>
+        </ul>
+        <p>En la zona del Pacífico, por el contrario, puede llover más de lo normal. Así que mientras unas zonas sufren por sequía, otras pueden sufrir por exceso de lluvia. Todo depende de cómo se muevan los vientos.</p>
+    </div>
+
+    <div class="destacado">
+        <h2>💧 Nuestra mayor riqueza: el agua</h2>
+        <p>Colombia tiene mucha agua, pero no siempre está donde la necesitamos ni cuando la necesitamos. Los páramos guardan el agua que bebemos millones de personas. Cuidarlos es cuidar nuestra propia vida. No debemos permitir que se quemen, que se construya encima o que se contaminen.</p>
+        <p>Cuando llega la sequía, cada gota cuenta. Ahorrar agua no es solo una recomendación: es una responsabilidad con quienes viven hoy y con quienes vendrán después.</p>
+    </div>
+
+    <div class="cierre">
+        <h2>🌿 Lo bueno que tenemos</h2>
+        <p>Ser un país biodiverso es nuestra mayor fortaleza. Tenemos más especies de aves, de orquídeas y de muchas familias de animales que casi cualquier otro lugar del mundo. Esa riqueza nos da esperanza: si la protegemos, la naturaleza tiene capacidad de recuperarse.</p>
+        <p>Plantando árboles, cuidando el agua y enseñando a otros, podemos ayudar a que nuestro país resista mejor los cambios del clima. Colombia no es solo un lugar donde vivimos: es algo que construimos todos los días con lo que hacemos.</p>
+        <p style="text-align: center; font-weight: bold; color: var(--verde-bosque); margin-top: 1rem;">"Amar a Colombia es cuidar su tierra, su agua y su gente."</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Tierra Viva · 🇨🇴 Cuidar Nuestra Tierra es Cuidar Nuestra Casa · 2026</p>
+</footer>
+
+</body>
+</html>

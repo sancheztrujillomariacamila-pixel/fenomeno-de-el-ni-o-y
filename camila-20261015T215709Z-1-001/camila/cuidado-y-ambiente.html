@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado Ambiental: Acciones que Transforman</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', 'Comic Sans MS', cursive, sans-serif; }
+        :root {
+            --verde-fuerte: #2e7d32;
+            --azul-agua: #0288d1;
+            --sol-calido: #f57c00;
+            --tierra-clara: #f1f8e9;
+            --texto-suave: #37474f;
+        }
+        body {
+            background: linear-gradient(180deg, #e8f5e9 0%, #e1f5fe 50%, #fff8e1 100%);
+            background-size: 200% 200%;
+            animation: crece-vida 16s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-suave);
+        }
+        @keyframes crece-vida {
+            0% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 0 0; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--verde-fuerte), var(--azul-agua), var(--sol-calido));
+            padding: 1.2rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1.1rem;
+            border-radius: 25px;
+            transition: all 0.35s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.08);
+        }
+        main {
+            padding: 2.8rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--verde-fuerte);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--azul-agua);
+            margin-bottom: 2.5rem;
+        }
+        .imagen-portada {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 25px rgba(46,125,50,0.18);
+        }
+        .seccion {
+            background: rgba(255,255,255,0.93);
+            padding: 2.3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 6px solid var(--verde-fuerte);
+        }
+        .seccion h2 {
+            color: var(--sol-calido);
+            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
+            border-bottom: 2px dotted #ffe0b2;
+            padding-bottom: 0.5rem;
+        }
+        .seccion p {
+            line-height: 1.95;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        .acciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .accion {
+            background: white;
+            padding: 1.6rem;
+            border-radius: 16px;
+            border-top: 4px solid var(--azul-agua);
+            transition: transform 0.3s ease;
+        }
+        .accion:hover {
+            transform: translateY(-5px);
+        }
+        .accion h3 {
+            color: var(--azul-agua);
+            margin-bottom: 0.6rem;
+        }
+        .cierre {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-right: 5px solid var(--verde-fuerte);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--verde-fuerte), var(--azul-agua));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.7rem; }
+            .imagen-portada { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="tierra-viva-inicio.html">🌍 Inicio</a></li>
+        <li><a href="fenomeno-el-nino.html">🌊 El Niño</a></li>
+        <li><a href="fuerza-super-nino.html">⚡ Super Niño</a></li>
+        <li><a href="colombia-pais-biodiverso.html">🇨🇴 Colombia</a></li>
+        <li><a href="cuidado-y-ambiente.html" class="activa">🌿 Cuidado Ambiental</a></li>
+        <li><a href="palabras-para-el-mundo.html">📝 Nuestra Voz</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>🌿 Cuidado Ambiental: Acciones que Transforman</h1>
+    <p class="subtitulo">Pequeños gestos, grandes cambios</p>
+
+    <img src="manos-sembrando-vida.jpg" alt="Sembrar, cuidar, crecer juntos" class="imagen-portada">
+
+    <div class="seccion">
+        <h2>💧 El agua: el tesoro más valioso</h2>
+        <p>Sin agua no hay vida. Cuando llega la sequía por El Niño, aprendemos lo importante que es no desperdiciar ni una gota. Cuidar el agua no es solo cerrar la llave: es valorarla, respetarla y entender que todos dependemos de ella.</p>
+        <p>Algunas formas sencillas de cuidarla:</p>
+        <ul>
+            <li>Cerrar la llave mientras te cepillas los dientes o te lavas las manos: hasta 10 litros ahorrados cada vez</li>
+            <li>Recolectar el agua de la ducha mientras esperas que salga fría para regar plantas o limpiar</li>
+            <li>Reparar fugas: una gota constante desperdicia cientos de litros al mes</li>
+            <li>No usar el inodoro como basurero: cada descarga gasta entre 6 y 12 litros de agua limpia</li>
+            <li>Explicar a la familia por qué el agua es valiosa: cuando todos cuidan, alcanza para todos</li>
